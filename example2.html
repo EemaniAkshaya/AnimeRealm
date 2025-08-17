@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Corner Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    /* Reset and Base Styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: black;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* NAVBAR STYLES */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px 30px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      z-index: 1000;
+    }
+
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      text-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .navbar .logo:hover {
+      transform: scale(1.05);
+    }
+
+    .navbar .logo i {
+      font-size: 24px;
+    }
+
+    /* LOGIN CARD */
+    .login-box {
+      background-color: #222;
+      border-radius: 20px;
+      padding: 40px 30px;
+      box-shadow: 0 0 60px rgba(255, 255, 255, 0.2);
+      text-align: center;
+      max-width: 350px;
+      width: 100%;
+      margin-top: 80px;
+      position: relative;
+    }
+
+    .user-icon {
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #183d6d;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .user-icon i {
+      color: white;
+      font-size: 24px;
+    }
+
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 15px 0;
+      background: #111;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 14px;
+    }
+
+    .options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      color: #ccc;
+    }
+
+    .options a {
+      color: #a6a6ff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .options a:hover {
+      color: #ffd700;
+    }
+
+    .login-box button {
+      margin-top: 20px;
+      padding: 12px;
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      background: #183d6d;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .login-btn:hover {
+      background: #25579e;
+    }
+
+    /* Responsive */
+    @media (max-width: 500px) {
+      .login-box {
+        width: 90%;
+        padding: 30px 20px;
+      }
+
+      .navbar .logo {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">
+      <i class="fa-solid fa-ghost"></i> Anime Corner
+    </div>
+  </div>
+
+  <div class="login-box">
+    <div class="user-icon">
+      <i class="fa-solid fa-user"></i>
+    </div>
+    <input type="text" placeholder="Email ID" />
+    <input type="password" placeholder="Password" />
+    <div class="options">
+      <label><input type="checkbox" /> Remember me</label>
+      <a href="#">Forgot Password</a>
+    </div>
+    <button>LOGIN</button>
+  </div><script src="https://cdn.lordicon.com/lordicon.js"></script>
+</body>
+</html>

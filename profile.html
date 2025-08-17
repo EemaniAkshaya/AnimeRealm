@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login UI</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+  </style>
+</head>
+<body>
+  <div class="profile">
+   <div class="avatar">
+    <input type="image" >
+   </div>
+  </div>
+  <script src="https://cdn.lordicon.com/lordicon.js"></script>
+   <script>
+  document.querySelector('.avatar').addEventListener('click', () => {
+    const fileInput = document.createElement('input');
+    fileInput.type = 'file';
+    fileInput.accept = 'image/*';
+    fileInput.onchange = (e) => {
+      const file = e.target.files[0];
+      if (file) {
+        const avatarImg = document.querySelector('.avatar img');
+        avatarImg.src = URL.createObjectURL(file);
+      }
+    };
+    fileInput.click();
+  });
+  </script>
+</body>
+</html>

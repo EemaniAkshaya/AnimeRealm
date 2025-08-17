@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Watchlist</title>
+  <style>
+    body {
+      background: #111;
+      color: white;
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    .card img {
+      width: 100px;
+      border-radius: 8px;
+    }
+
+    .card-content {
+      flex-grow: 1;
+    }
+
+    .remove-btn {
+      padding: 6px 12px;
+      background: #ff4d4d;
+      opacity: 0.6;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .remove-btn:hover {
+      background: #e60000;
+    }
+    @media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .card {
+    flex-direction: column; /* stack items vertically */
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .card img {
+    width: 80px; /* slightly smaller image */
+  }
+
+  .remove-btn {
+    width: 100%; /* full-width button on mobile */
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <h1>My Watchlist</h1>
+  <div id="watchlist"></div>
+
+  <script>
+    let watchlist = JSON.parse(localStorage.getItem("watchlist")) || [];
+    const container = document.getElementById("watchlist");
+
+    function renderWatchlist() {
+      container.innerHTML = ""; // Clear previous content
+
+      if (watchlist.length === 0) {
+        container.innerHTML = "<p>Your watchlist is empty.</p>";
+        return;
+      }
+
+      watchlist.forEach((anime, index) => {
+        const card = document.createElement("div");
+        card.className = "card";
+        card.innerHTML = `
+          <img src="${anime.image}" alt="${anime.title}" />
+          <div class="card-content">
+            <h3>${anime.title}</h3>
+            <p>Genre: ${anime.genre}</p>
+            <p>Rating: ${anime.rating}</p>
+          </div>
+          <button class="remove-btn" onclick="removeFromWatchlist(${index})">❌ Remove</button>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function removeFromWatchlist(index) {
+      watchlist.splice(index, 1);
+      localStorage.setItem("watchlist", JSON.stringify(watchlist));
+      renderWatchlist();
+    }
+
+    renderWatchlist();
+  </script>
+</body>
+</html>

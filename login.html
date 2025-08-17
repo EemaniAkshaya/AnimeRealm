@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login UI</title>
+   <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  
+}
+
+.container {
+  position: relative;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 40px 30px;
+  width: 300px;
+  box-shadow: 0 8px 32px rgb(69, 69, 64);
+  text-align: center;
+  position: relative;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  background-color: purple;
+  color: white;
+  border-radius: 50%;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  margin: 15px 0;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.input-group label {
+  margin-right: 10px;
+  color: white;
+  font-size: 18px;
+}
+
+.input-group input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  flex: 1;
+  font-size: 16px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 20px;
+  font-size: 14px;
+  color: #eee;
+}
+
+.options a {
+  color: #cce;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.login-btn {
+  background-color: purple;
+  color: white;
+  padding: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+ @media (max-width: 500px) 
+ {
+      .login-box {
+        width: 90%;
+        padding: 30px 20px;
+      }
+    }
+    .login-btn:hover {
+      background: purple;
+    }
+
+.login-btn:hover {
+  background-color: purple;
+}
+.options{
+    font-family: 'Segoe UI', sans-serif;
+}
+.heading{
+  position: absolute;
+  top: 3.5%;
+  left: 3%;
+  margin-left: 2.5%;
+  font-size: 32px;
+  font-weight: bolder;
+  font-family: 'Segoe UI', sans-serif;
+  z-index: 10;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(90deg, #610C9F,#940B92,#DA0C81,#E95793);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.5px black;
+}
+.logo{
+  position: absolute;
+  top: 4%;
+  left: 1%;
+}
+@media (width: 600px){
+  .logo{
+  position: absolute;
+  top: 4%;
+  left: 1%;
+}
+}
+.hero{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(17, 17, 17, 0.5)), url("hero.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+  </style>
+  
+  </head>
+<body class="hero">
+  <div class="nav">
+   <div class="logo">
+         <lord-icon
+          src="https://cdn.lordicon.com/tqbntcar.json"
+          trigger="hover"
+          stroke="bold"
+          colors="primary:#ffffff,secondary:#ffffff">
+        </lord-icon>
+      </div>
+     <h1 class="heading">AnimeRealm</h1>
+      </div>
+  <div class="container">
+    <div class="login-box">
+      <div class="avatar">
+        <i class="user-icon"><lord-icon
+          src="https://cdn.lordicon.com/kdduutaw.json"
+          trigger="hover"
+          state="hover-looking-around"
+          colors="primary:#ffffff,secondary:#ffffff">
+        </lord-icon></i>
+      </div>
+      <form id="loginForm">
+        <div class="input-group">
+          <input type="email" id="email" placeholder="Email ID" required />
+        </div>
+        <div class="input-group">
+          <input type="password" id="password" placeholder="Password" required />
+        </div>
+        <div class="options">
+          <label><input type="radio" /> Remember me</label>
+          <a href="#">Forgot Password</a>
+        </div>
+        <button type="button" class="login-btn" onclick="window.location.href='index.html'">LOGIN</button>
+
+      </form>
+    </div>
+  </div>
+  </div>
+  <script src="https://cdn.lordicon.com/lordicon.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+
+  // Login form
+  document.getElementById("loginForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    auth.signInWithEmailAndPassword(email, password)
+      .then((userCredential) => {
+        alert("✅ Logged in as: " + userCredential.user.email);
+      })
+      .catch((error) => {
+        alert("❌ Error: " + error.message);
+      });
+  });
+</script>
+</body>
+
+</html>

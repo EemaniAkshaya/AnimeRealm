@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ANIME WORLD</title>
+  <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+  <div id="my">
+      <div class="hero-image">
+    <div class="all">
+    <!-- Left Side: Logo & Search -->
+    <div class="left-icons">
+      <!---logo------>
+      <div class="logo">
+         <lord-icon
+          src="https://cdn.lordicon.com/tqbntcar.json"
+          trigger="hover"
+          colors="primary:#ffffff,secondary:#ffffff">
+        </lord-icon>
+      </div>
+      <!----search----->
+      <div class="search">
+        <a href="search.html">
+        <lord-icon 
+          src="https://cdn.lordicon.com/wjyqkiew.json"
+          trigger="loop"
+          state="loop-spin"
+          colors="primary:#ffffff,secondary:#ffffff">
+        </lord-icon></a>
+      </div>
+    </div>
+    <!-- Right Side: Menu & Profile -->
+    <div class="right-icons">
+      <!----menu------>
+      <div class="menu">
+  <lord-icon
+    src="https://cdn.lordicon.com/jectmwqf.json"
+    trigger="click"
+    onclick="toggleMenu()"
+    state="hover-squeeze"
+    colors="primary:#ffffff,secondary:#ffffff"
+    style="width:40px;height:40px;cursor:pointer;">
+  </lord-icon>
+</div>
+<section id="menuDropdown" class="dropdown-content" style="display: none;">
+  <a href="index.html">Home</a>
+  <a href="Watch_List.html">Watch List</a>
+  <a href="#">Most Popular</a>
+  <a href="Movies.html">Movies</a>
+  <a href="tvseries.html">TV Series</a>
+  <a href="#">Genre</a>
+  <a href="about.html">About Us</a>
+</section>
+      <!--------- profile-------->
+      <div class="profile">
+  <div onclick="toggleDropdown()" class="profile-icon">
+    <lord-icon
+      src="https://cdn.lordicon.com/kdduutaw.json"
+      trigger="click"
+      state="hover-looking-around"
+      colors="primary:#ffffff,secondary:#ffffff">
+    </lord-icon>
+  </div>
+   <section id="profileDropdown" class="dropdown-content">
+    <a href="profile.html">My Profile</a>
+    <a href="#">Settings</a>
+    <a href="login.html">Logout</a>
+  </section>
+</div>
+  </div>
+  </div>
+  <!-- Title -->
+    <div class="head">
+      <p class="gradient-text">AnimeRealm</p>
+  </div>
+   <a href="login.html"><button class="buttons"> Sign In</button></a>
+  </div>
+  <br><br>
+   <!---------------------------slide-show------------------------------------------------> 
+  <div class="slideshow">
+    <h2>Trending</h2>
+      <div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <a href="onepiece.html"><img src="https://static.posters.cz/image/hp/60699.jpg" style="width:100%"></a>
+    <div class="text">One Piece</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <a href="gachikuta.html"><img src="https://static.beebom.com/wp-content/uploads/2025/06/Gachiakuta-poster.jpg?w=1168&quality=75" style="width:100%"></a>
+    <div class="text">Gachiakuta </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <a href="lordofm.html"><img src="https://blackcompany.com.br/wp-content/uploads/2025/03/Team-48.jpg" style="width:100%"></a>
+    <div class="text">Lord of Mysteries</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+   <a href="sakamoto.html"><img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/04d68e59707afdc28878a5b2224ad5bc.jpg" style="width:100%" id="id"></a>
+    <div class="text">The Water Magician</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <a href=""><img src="https://comicbook.com/wp-content/uploads/sites/4/2024/11/Sakamoto-Days-Anime-Release-Date.jpg" style="width:100%" id="id"></a>
+    <div class="text">Sakamoto Days Part -2</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+<br>
+<!---------------------------slide-show------------------------------------------------>
+  <!---------cards-------->
+  <div class="container">
+    <div class="card"><a href="onepiece.html"><img src="https://m.media-amazon.com/images/M/MV5BMTNjNGU4NTUtYmVjMy00YjRiLTkxMWUtNzZkMDNiYjZhNmViXkEyXkFqcGc@._V1_.jpg" alt="One Piece" ></a></div>
+    <div class="card"><a href="naruto.html"><img src="https://m.media-amazon.com/images/M/MV5BZTNjOWI0ZTAtOGY1OS00ZGU0LWEyOWYtMjhkYjdlYmVjMDk2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Naruto"></a></div>
+    <div class="card"><a href="demon.html"><img src="https://m.media-amazon.com/images/M/MV5BMWU1OGEwNmQtNGM3MS00YTYyLThmYmMtN2FjYzQzNzNmNTE0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Demon Slayer: Kimetsu no Yaiba" ></a></div>
+    <div class="card"><a href="aot.html"><img src="https://m.media-amazon.com/images/M/MV5BZjliODY5MzQtMmViZC00MTZmLWFhMWMtMjMwM2I3OGY1MTRiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Attack On Titan"></a></div>
+    <div class="card"><a href="dragonball.html"><img src="https://m.media-amazon.com/images/M/MV5BMGQ0ZWE4NDYtYWY0Mi00MjE0LWI1MzctZDA1NGExYzE3N2FiXkEyXkFqcGc@._V1_.jpg" alt="Dragon Ball" ></a></div>
+    <div class="card"><a href="deathnote.html"><img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p12981153_b_v8_aa.jpg" alt="Death Note"></a></div>
+    <div class="card"><a href="bleach.html"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/72/Bleachanime.png/250px-Bleachanime.png" alt="Bleach"></a></div>
+    <div class="card"><a href="tokyo.html"><img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p20081301_b_v8_aa.jpg" alt="Tokyo Revengers"></a></div>
+    <div class="card"><a href="classroom.html"><img src="https://images.justwatch.com/poster/298573879/s718/classroom-of-the-elite.jpg" alt="Classroom of the Elite"></a></div>
+    <div class="card"><a href="haikyu.html"><img src="https://images.justwatch.com/poster/306807849/s718/haikyu.jpg" alt="Haikyu!!" ></a></div>
+    <div class="card"><a href="spy.html"><img src="https://m.media-amazon.com/images/I/81HgZ64VEIL._UF1000,1000_QL80_.jpg" alt="Spy × Family" ></a></div>
+    <div class="card"><a href="chainsaw.html"><img src="https://www.postershoppe.com/cdn/shop/files/chainsaw-man_black_framed_300x300.jpg?v=1736032756" alt="Chainsaw Man"></a></div>
+    <div class="card"><a href="black.html"><img src="https://m.media-amazon.com/images/M/MV5BZmZkZjNhMWMtM2U0Mi00MjdlLTk3NmMtMTMwZjgwOTJmODMzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Black Clover"></a></div>
+    <div class="card"><a href="mha.html"><img src="https://m.media-amazon.com/images/M/MV5BY2QzODA5OTQtYWJlNi00ZjIzLThhNTItMDMwODhlYzYzMjA2XkEyXkFqcGc@._V1_.jpg" alt="My Hero Academia"></a></div>
+    <div class="card"><a href="boruto.html"><img src="https://m.media-amazon.com/images/M/MV5BNDgzYzNhOGUtMWI1Mi00YjJkLWI2NGItOWFlNDE4ZjE0NGExXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Boruto"></a></div>
+    <div class="card"><a href="opm.html"><img src="https://images.justwatch.com/poster/312763447/s718/one-punch-man.jpg" alt="One Punch Man"></a></div>
+    <div class="card"><a href="friend.html"><img src="https://upload.wikimedia.org/wikipedia/en/6/60/Frieren_Beyond_Journey%27s_End.jpg" alt="Frieren: Beyond Journey's End"></a></div>
+    <div class="card"><a href="vinland.html"><img src="https://upload.wikimedia.org/wikipedia/en/5/51/Vinland_Saga_volume_01_cover.jpg" alt="Vinland Saga"></a></div>
+    <div class="card"><a href="berserk.html"><img src="https://upload.wikimedia.org/wikipedia/en/f/f4/Berserk_%281997_anime%29%2C_DVD_cover_1.jpg" alt="Berserk"></a></div>
+    <div class="card"><a href="hxh.html"><img src="https://m.media-amazon.com/images/M/MV5BYzYxOTlkYzctNGY2MC00MjNjLWIxOWMtY2QwYjcxZWIwMmEwXkEyXkFqcGc@._V1_.jpg" alt="Hunter X Hunter"></a></div>
+    <div class="card"><a href="solo.html"><img src="https://m.media-amazon.com/images/M/MV5BM2M4YzdkMTEtMjUyYy00ZWY0LWI5ODQtNGRkZWQ1MzU5MWM2XkEyXkFqcGc@._V1_.jpg" alt="Solo Leveling"></a></div>
+  </div> 
+  <!--------next page---------->
+  <section class="nextpage">
+    <a href="index.html">1</a>
+    <a href="2ndpage.html">2</a>
+  </section><br>
+  <Section id="about">
+    
+  </Section>
+  </div></body>
+  <script src="https://cdn.lordicon.com/lordicon.js"></script>
+  <script src="script.js"></script>
+</body>
+<footer class="footer">
+  <a href="https://lordicon.com/">Icons by Lordicon.com</a>
+  <a href="https://iconscout.com/lottie-animations/menu" class="text-underline font-size-sm" target="_blank">Menu</a> 
+  by <a href="https://iconscout.com/contributors/overcivilized" class="text-underline font-size-sm">Lit Icons</a> 
+  on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
+</footer>
+</html>

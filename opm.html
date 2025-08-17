@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Punch-Man</title>
+    <link rel="stylesheet" href="cardscss.css">
+</head>
+<body>
+    <div class="body">
+  <div class="all">
+    <!-- Left Side: Logo & Search -->
+    <div class="left-icons">
+      <!---logo------>
+      <div class="logo">
+         <lord-icon
+          src="https://cdn.lordicon.com/tqbntcar.json"
+          trigger="hover"
+          colors="primary:#ffffff,secondary:#ffffff">
+        </lord-icon>
+      </div>
+      <!----search----->
+      <div class="search">
+        <a href="search.html">
+        <lord-icon 
+          src="https://cdn.lordicon.com/wjyqkiew.json"
+          trigger="loop"
+          state="loop-spin"
+          colors="primary:#ffffff,secondary:#ffffff">
+        </lord-icon></a>
+      </div>
+    </div>
+
+    <!-- Right Side: Menu & Profile -->
+    <div class="right-icons">
+      <!----menu------>
+    <div class="menu">
+  <lord-icon
+    src="https://cdn.lordicon.com/jectmwqf.json"
+    trigger="click"
+    onclick="toggleMenu()"
+    state="hover-squeeze"
+    colors="primary:#ffffff,secondary:#ffffff"
+    style="width:40px;height:40px;cursor:pointer;">
+  </lord-icon>
+</div>
+<section id="menuDropdown" class="dropdown-content" style="display: none;">
+  <a href="index.html">Home</a>
+  <a href="Watch_List.html">Watch List</a>
+  <a href="#">Most Popular</a>
+  <a href="#">Movies</a>
+  <a href="#">TV Series</a>
+  <a href="#">Genre</a>
+  <a href="about.html">About Us</a>
+</section>
+      <!--------- profile-------->
+      <div class="profile">
+  <div onclick="toggleDropdown()" class="profile-icon">
+    <lord-icon
+      src="https://cdn.lordicon.com/kdduutaw.json"
+      trigger="click"
+      state="hover-looking-around"
+      colors="primary:#ffffff,secondary:#ffffff">
+    </lord-icon>
+  </div>
+   <section id="profileDropdown" class="dropdown-content">
+    <a href="profile.html">My Profile</a>
+    <a href="#">Settings</a>
+    <a href="login.html">Logout</a>
+  </section>
+</div>
+</div>
+</div>
+<!------text&image------------->
+<div class="img">
+    <img class="img-img" src="https://images.justwatch.com/poster/312763447/s718/one-punch-man.jpg" alt="Berserk" />
+    <div class="img_info">
+      <h2>One Punch-Man</h2>
+      <p>Genre: Action, Adventure</p>
+      <p>Rating: ⭐ 8.52/10</p>
+    </div>
+    <button class="watchlist-btn" onclick="addToWatchlist10()">+ Add to Watchlist</button>
+  </div>
+
+<!-----------------seasons----------------->
+<div class="seasons">
+  <div>
+   <div class="info"><strong>Japanese:</strong>ワンパンマン</div>
+    <div class="info"><strong>Synonyms:</strong>One Punch-Man, One-Punch Man, OPM</div>
+    <div class="info"><strong>Aired:</strong>Oct 5, 2015 to Dec 21, 2015</div>
+    <div class="info"><strong>Premiered:</strong> summer 2016</div>
+    <div class="info"><strong>Duration:</strong> 24m</div>
+    <div class="info"><strong>Status:</strong> Finished Airing</div>
+    <div class="info"><strong>MAL Score:</strong> 8.52</div>
+    <div class="info"><strong>Genres:</strong>
+      <div class="genres">
+        <div class="genre-tag">Action</div>
+        <div class="genre-tag">Comedy</div><br>
+        <div class="genre-tag">Parody</div>
+        <div class="genre-tag">Sci-fi</div>
+        <div class="genre-tag">Supar Power</div>
+        <div class="genre-tag">Supernatural</div>
+      </div>
+    </div>
+    <div class="info"><strong>Studios:</strong> Madhouse</div>
+    <div class="info"><strong>Producers:</strong> TV Tokyo, Bandai Visual, Lantis, Asatsu DK, Banpresto, Good Smile Company, Shueisha, JR East Marketing & Communications, Madhouse, Viz Media</div>
+  </div>
+ </div>
+ <br>
+ <div><h3>More Seasons</h3></div>
+</div>
+ <div class="container">
+    <div class="card"><img src="https://m.media-amazon.com/images/M/MV5BNzMwOGQ5MWItNzE3My00ZDYyLTk4NzAtZWIyYWI0NTZhYzY0XkEyXkFqcGc@._V1_.jpg" alt="Season-1">Season-1</div>
+    <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGlkHpUDH_detLqsJKdDBMqKBLDsso4VntZA&s" alt="Season-1">OVA</div>
+    <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFQcrF0gW-FEHZ6fckVdNExvlX1yr60MDhDQ&s" alt="Season-1">Sp-1</div>
+    <div class="card"><img src=https://upload.wikimedia.org/wikipedia/en/b/b1/One-Punch_Man_BR1.jpg" alt="Season-1">Season-2</div>
+    <div class="card"><img src="https://preview.redd.it/one-punch-man-season-3-key-visual-v0-vaqecgyko6ne1.jpeg?auto=webp&s=601565b942c3f7e2cd961719a2ff67107f3e582c" alt="Season-4 Part-2">Sp-2</div>
+ </div>
+<!---------------------------------------------------------------------------->
+
+ <script src="https://cdn.lordicon.com/lordicon.js"></script>
+<script src="script.js"></script>
+</div>
+</body>
+</html>

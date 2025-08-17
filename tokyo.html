@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo Revengers</title>
+    <link rel="stylesheet" href="cardscss.css">
+</head>
+<body>
+    <div class="body">
+  <div class="all">
+    <!-- Left Side: Logo & Search -->
+    <div class="left-icons">
+      <!---logo------>
+      <div class="logo">
+         <lord-icon
+          src="https://cdn.lordicon.com/tqbntcar.json"
+          trigger="hover"
+          colors="primary:#ffffff,secondary:#ffffff">
+        </lord-icon>
+      </div>
+      <!----search----->
+      <div class="search">
+        <a href="search.html">
+        <lord-icon 
+          src="https://cdn.lordicon.com/wjyqkiew.json"
+          trigger="loop"
+          state="loop-spin"
+          colors="primary:#ffffff,secondary:#ffffff">
+        </lord-icon></a>
+      </div>
+    </div>
+
+    <!-- Right Side: Menu & Profile -->
+    <div class="right-icons">
+      <!----menu------>
+    <div class="menu">
+  <lord-icon
+    src="https://cdn.lordicon.com/jectmwqf.json"
+    trigger="click"
+    onclick="toggleMenu()"
+    state="hover-squeeze"
+    colors="primary:#ffffff,secondary:#ffffff"
+    style="width:40px;height:40px;cursor:pointer;">
+  </lord-icon>
+</div>
+<section id="menuDropdown" class="dropdown-content" style="display: none;">
+  <a href="index.html">Home</a>
+  <a href="Watch_List.html">Watch List</a>
+  <a href="#">Most Popular</a>
+  <a href="#">Movies</a>
+  <a href="#">TV Series</a>
+  <a href="#">Genre</a>
+  <a href="about.html">About Us</a>
+</section>
+      <!--------- profile-------->
+      <div class="profile">
+  <div onclick="toggleDropdown()" class="profile-icon">
+    <lord-icon
+      src="https://cdn.lordicon.com/kdduutaw.json"
+      trigger="click"
+      state="hover-looking-around"
+      colors="primary:#ffffff,secondary:#ffffff">
+    </lord-icon>
+  </div>
+   <section id="profileDropdown" class="dropdown-content">
+    <a href="profile.html">My Profile</a>
+    <a href="#">Settings</a>
+    <a href="login.html">Logout</a>
+  </section>
+</div>
+</div>
+</div>
+<!------text&image------------->
+<div class="img">
+    <img class="img-img" src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p20081301_b_v8_aa.jpg" alt="Berserk" />
+    <div class="img_info">
+      <h2>Tokyo Revengers</h2>
+      <p>Genre: Action, School</p>
+      <p>Rating: ⭐ 8.27/10</p>
+    </div>
+    <button class="watchlist-btn" onclick="addToWatchlist2()">+ Add to Watchlist</button>
+  </div>
+
+<!-----------------seasons----------------->
+<div class="seasons">
+  <div>
+   <div class="info"><strong>Japanese:</strong>東京リベンジャーズ</div>
+    <div class="info"><strong>Synonyms:</strong>Tokyo Revengers</div>
+    <div class="info"><strong>Aired:</strong> Apr 11, 2021 to ?</div>
+    <div class="info"><strong>Premiered:</strong> Winter 2021</div>
+    <div class="info"><strong>Duration:</strong> 24m</div>
+    <div class="info"><strong>Status:</strong> Finished Airing</div>
+    <div class="info"><strong>MAL Score:</strong> 8.27</div>
+    <div class="info"><strong>Genres:</strong>
+      <div class="genres">
+        <div class="genre-tag">Action</div>
+        <div class="genre-tag">School</div>
+        <div class="genre-tag">Drama</div>
+        <div class="genre-tag">Shounen</div>
+      </div>
+    </div>
+    <div class="info"><strong>producers:</strong> LIDENFILMS, Pony Canyon</div>
+  </div>
+ </div>
+ <br>
+ <div><h3>More Seasons</h3></div>
+</div>
+ <div class="container">
+    <div class="card"><img src="" alt="Season-1">Season-1</div>
+    <div class="card"><img src="" alt="Season-4 Part-2">Season-2</div>
+    <div class="card"><img src="" alt="Season-1">Season-3</div>    
+ </div>
+<!---------------------------------------------------------------------------->
+
+ <script src="https://cdn.lordicon.com/lordicon.js"></script>
+<script src="script.js"></script>
+</div>
+</body>
+</html>

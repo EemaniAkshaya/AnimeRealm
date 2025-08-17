@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frieren</title>
+    <link rel="stylesheet" href="cardscss.css">
+</head>
+<body>
+    <div class="body">
+  <div class="all">
+    <!-- Left Side: Logo & Search -->
+    <div class="left-icons">
+      <!---logo------>
+      <div class="logo">
+         <lord-icon
+          src="https://cdn.lordicon.com/tqbntcar.json"
+          trigger="hover"
+          colors="primary:#ffffff,secondary:#ffffff">
+        </lord-icon>
+      </div>
+      <!----search----->
+      <div class="search">
+        <a href="search.html">
+        <lord-icon 
+          src="https://cdn.lordicon.com/wjyqkiew.json"
+          trigger="loop"
+          state="loop-spin"
+          colors="primary:#ffffff,secondary:#ffffff">
+        </lord-icon></a>
+      </div>
+    </div>
+
+    <!-- Right Side: Menu & Profile -->
+    <div class="right-icons">
+      <!----menu------>
+    <div class="menu">
+  <lord-icon
+    src="https://cdn.lordicon.com/jectmwqf.json"
+    trigger="click"
+    onclick="toggleMenu()"
+    state="hover-squeeze"
+    colors="primary:#ffffff,secondary:#ffffff"
+    style="width:40px;height:40px;cursor:pointer;">
+  </lord-icon>
+</div>
+<section id="menuDropdown" class="dropdown-content" style="display: none;">
+  <a href="index.html">Home</a>
+  <a href="Watch_List.html">Watch List</a>
+  <a href="#">Most Popular</a>
+  <a href="#">Movies</a>
+  <a href="#">TV Series</a>
+  <a href="#">Genre</a>
+  <a href="about.html">About Us</a>
+</section>
+      <!--------- profile-------->
+      <div class="profile">
+  <div onclick="toggleDropdown()" class="profile-icon">
+    <lord-icon
+      src="https://cdn.lordicon.com/kdduutaw.json"
+      trigger="click"
+      state="hover-looking-around"
+      colors="primary:#ffffff,secondary:#ffffff">
+    </lord-icon>
+  </div>
+   <section id="profileDropdown" class="dropdown-content">
+    <a href="profile.html">My Profile</a>
+    <a href="#">Settings</a>
+    <a href="login.html">Logout</a>
+  </section>
+</div>
+</div>
+</div>
+<!------text&image------------->
+<div class="img">
+    <img class="img-img" img src="https://upload.wikimedia.org/wikipedia/en/6/60/Frieren_Beyond_Journey%27s_End.jpg" alt="Berserk" />
+    <div class="img_info">
+      <h2>Frieren:Beyound Journey's End</h2>
+      <p>Genre: Drama, Shounen</p>
+      <p>Rating: ⭐ 9.36/10</p>
+    </div>
+    <button class="watchlist-btn" onclick="addToWatchlist11()">+ Add to Watchlist</button>
+  </div>
+
+<!-----------------seasons----------------->
+<div class="seasons">
+  <div>
+   <div class="info"><strong>Japanese:</strong> 葬送のフリーレン</div>
+    <div class="info"><strong>Synonyms:</strong> Frieren: Beyond Journey's End</div>
+    <div class="info"><strong>Aired:</strong>Sep 29, 2023 to Mar 22, 2024</div>
+    <div class="info"><strong>Premiered:</strong>  Fall 2023</div>
+    <div class="info"><strong>Duration:</strong> 24m</div>
+    <div class="info"><strong>Status:</strong> Finished Airing</div>
+    <div class="info"><strong>MAL Score:</strong> 9.36</div>
+    <div class="info"><strong>Genres:</strong>
+      <div class="genres">
+        <div class="genre-tag">Drama</div>
+        <div class="genre-tag">Fantasy</div>
+        <div class="genre-tag">Shounen</div>
+        <div class="genre-tag">Adventure</div>
+      </div>
+    </div>
+    <div class="info"><strong>Studios:</strong> Madhouse</div>
+     <div class="info"><strong>Producers:</strong>TOHO animation, Shogakukan</div>
+  </div>
+ </div>
+ <br>
+ <div><h3>More Seasons</h3></div>
+</div>
+ <div class="container">
+   No Seasons
+ </div>
+<!---------------------------------------------------------------------------->
+
+ <script src="https://cdn.lordicon.com/lordicon.js"></script>
+<script src="script.js"></script>
+</div>
+</body>
+</html>

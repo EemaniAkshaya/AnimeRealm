@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OP</title>
+    <link rel="stylesheet" href="cardscss.css">
+</head>
+<body>
+    <div class="body">
+  <div class="all">
+    <!-- Left Side: Logo & Search -->
+    <div class="left-icons">
+      <!---logo------>
+      <div class="logo">
+         <lord-icon
+          src="https://cdn.lordicon.com/tqbntcar.json"
+          trigger="hover"
+          colors="primary:#ffffff,secondary:#ffffff">
+        </lord-icon>
+      </div>
+      <!----search----->
+      <div class="search">
+        <a href="search.html">
+        <lord-icon 
+          src="https://cdn.lordicon.com/wjyqkiew.json"
+          trigger="loop"
+          state="loop-spin"
+          colors="primary:#ffffff,secondary:#ffffff">
+        </lord-icon></a>
+      </div>
+    </div>
+
+    <!-- Right Side: Menu & Profile -->
+    <div class="right-icons">
+      <!----menu------>
+    <div class="menu">
+  <lord-icon
+    src="https://cdn.lordicon.com/jectmwqf.json"
+    trigger="click"
+    onclick="toggleMenu()"
+    state="hover-squeeze"
+    colors="primary:#ffffff,secondary:#ffffff"
+    style="width:40px;height:40px;cursor:pointer;">
+  </lord-icon>
+</div>
+<section id="menuDropdown" class="dropdown-content" style="display: none;">
+  <a href="index.html">Home</a>
+  <a href="Watch_List.html">Watch List</a>
+  <a href="#">Most Popular</a>
+  <a href="#">Movies</a>
+  <a href="#">TV Series</a>
+  <a href="#">Genre</a>
+  <a href="about.html">About Us</a>
+</section>
+      <!--------- profile-------->
+      <div class="profile">
+  <div onclick="toggleDropdown()" class="profile-icon">
+    <lord-icon
+      src="https://cdn.lordicon.com/kdduutaw.json"
+      trigger="click"
+      state="hover-looking-around"
+      colors="primary:#ffffff,secondary:#ffffff">
+    </lord-icon>
+  </div>
+   <section id="profileDropdown" class="dropdown-content">
+    <a href="profile.html">My Profile</a>
+    <a href="#">Settings</a>
+    <a href="login.html">Logout</a>
+  </section>
+</div>
+</div>
+</div>
+<!------text&image------------->
+<div class="img">
+    <img class="img-img" src="https://m.media-amazon.com/images/M/MV5BMTNjNGU4NTUtYmVjMy00YjRiLTkxMWUtNzZkMDNiYjZhNmViXkEyXkFqcGc@._V1_.jpg"" alt="One Piece" />
+    <div class="img_info">
+      <h2>One Piece</h2>
+      <p>Genre: Action, Drama</p>
+      <p>Rating: ⭐ 9.1/10</p>
+    </div>
+    <button class="watchlist-btn" onclick="addWatchlist()">+ Add to Watchlist</button>
+  </div>
+
+<!-----------------seasons----------------->
+<div class="seasons">
+  <div>
+   <div class="info"><strong>Japanese:</strong> One Piece</div>
+    <div class="info"><strong>Synonyms:</strong> OP</div>
+    <div class="info"><strong>Aired:</strong> 1999 to ?</div>
+    <div class="info"><strong>Premiered:</strong> Fall 1999</div>
+    <div class="info"><strong>Duration:</strong> 24m</div>
+    <div class="info"><strong>Status:</strong> Currently Airing</div>
+    <div class="info"><strong>MAL Score:</strong> 8.62</div>
+    <div class="info"><strong>Genres:</strong>
+      <div class="genres">
+        <div class="genre-tag">Action</div>
+        <div class="genre-tag">Adventure</div>
+        <div class="genre-tag">Drama</div>
+        <div class="genre-tag">Fantasy</div>
+        <div class="genre-tag">Shounen</div>
+        <div class="genre-tag">Super Power</div>
+        <div class="genre-tag">Comedy</div>
+      </div>
+    </div>
+    <div class="info"><strong>Studios:</strong> Toei Animations</div>
+    <div class="info"><strong>Producers:</strong> Full TV, shueisha, Toei Animations, Funimation , 4Kids Entertainment </div>
+  </div>
+ </div>
+ <br>
+ <div><h3>Movies Of One Piece</h3></div>
+</div>
+ <div class="container">
+  <ul>
+   <li><p>One Piece: Chopper's Kingdom in the Strange Animal Island: <a href="https://www.imdb.com/title/tt0997084/?ref_=ext_shr_lnk">Visit link</a></p></li>
+  <li> <p>One Piece: Dead End Adventure: <a href="https://www.imdb.com/title/tt1006926/?ref_=ext_shr_lnk">visit link</a></p></li>
+   <li><P>One Piece: Baron Omatsuri and the Secret Island: <a href="https://www.imdb.com/title/tt1018764/?ref_=ext_shr_lnk">Visit link</a></P></li>
+   <li><p>One Piece: The Cursed Holy Sword: <a href="https://www.imdb.com/title/tt1010435/?ref_=ext_shr_lnk">Visit link</a></p></li>
+   <li><P>One Piece: The Giant Mechanical Soldier of Karakuri Castle: <a href="https://www.imdb.com/title/tt1059950/?ref_=ext_shr_lnk">Visit link</a></P></li>
+   <li><P>One Piece: Episode of Alabasta - The Desert Princess and the Pirates<a href="https://www.imdb.com/title/tt1037116/?ref_=ext_shr_lnk">Visit link</a></P></li>
+   <li><P>One Piece: Episode of Chopper Plus - Bloom in the Winter, Miracle Sakura<a href="https://www.imdb.com/title/tt1206326/?ref_=ext_shr_lnk">Visit link</a></P></li>
+   <li><P>One Piece Film: Red<a href="https://www.imdb.com/title/tt16183464/?ref_=ext_shr_lnk">Visit link</a></P></li>
+    </ul></div>
+<!---------------------------------------------------------------------------->
+
+ <script src="https://cdn.lordicon.com/lordicon.js"></script>
+<script src="script.js"></script>
+</div>
+</body>
+</html>

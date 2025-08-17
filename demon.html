@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demon Slayer</title>
+    <link rel="stylesheet" href="cardscss.css">
+</head>
+<body>
+    <div class="body">
+  <div class="all">
+    <!-- Left Side: Logo & Search -->
+    <div class="left-icons">
+      <!---logo------>
+      <div class="logo">
+         <lord-icon
+          src="https://cdn.lordicon.com/tqbntcar.json"
+          trigger="hover"
+          colors="primary:#ffffff,secondary:#ffffff">
+        </lord-icon>
+      </div>
+      <!----search----->
+      <div class="search">
+        <a href="search.html">
+        <lord-icon 
+          src="https://cdn.lordicon.com/wjyqkiew.json"
+          trigger="loop"
+          state="loop-spin"
+          colors="primary:#ffffff,secondary:#ffffff">
+        </lord-icon></a>
+      </div>
+    </div>
+
+    <!-- Right Side: Menu & Profile -->
+    <div class="right-icons">
+      <!----menu------>
+    <div class="menu">
+  <lord-icon
+    src="https://cdn.lordicon.com/jectmwqf.json"
+    trigger="click"
+    onclick="toggleMenu()"
+    state="hover-squeeze"
+    colors="primary:#ffffff,secondary:#ffffff"
+    style="width:40px;height:40px;cursor:pointer;">
+  </lord-icon>
+</div>
+<section id="menuDropdown" class="dropdown-content" style="display: none;">
+  <a href="index.html">Home</a>
+  <a href="Watch_List.html">Watch List</a>
+  <a href="#">Most Popular</a>
+  <a href="#">Movies</a>
+  <a href="#">TV Series</a>
+  <a href="#">Genre</a>
+  <a href="about.html">About Us</a>
+</section>
+      <!--------- profile-------->
+      <div class="profile">
+  <div onclick="toggleDropdown()" class="profile-icon">
+    <lord-icon
+      src="https://cdn.lordicon.com/kdduutaw.json"
+      trigger="click"
+      state="hover-looking-around"
+      colors="primary:#ffffff,secondary:#ffffff">
+    </lord-icon>
+  </div>
+   <section id="profileDropdown" class="dropdown-content">
+    <a href="profile.html">My Profile</a>
+    <a href="#">Settings</a>
+    <a href="login.html">Logout</a>
+  </section>
+</div>
+</div>
+</div>
+<!------text&image------------->
+<div class="img">
+    <img class="img-img" src="https://m.media-amazon.com/images/M/MV5BMWU1OGEwNmQtNGM3MS00YTYyLThmYmMtN2FjYzQzNzNmNTE0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Demon Slayer" />
+    <div class="img_info">
+      <h2>Demon Slayer</h2>
+      <p>Genre: Action, Demons, Historical</p>
+      <p>Rating: ⭐ 9.0/10</p>
+    </div>
+    <button class="watchlist-btn" onclick="ToWatchlist()">+ Add to Watchlist</button>
+  </div>
+
+<!-----------------seasons----------------->
+<div class="seasons">
+  <div>
+   <div class="info"><strong>Japanese:</strong> </div>
+    <div class="info"><strong>Synonyms:</strong>Demon Slayer</div>
+    <div class="info"><strong>Aired:</strong>2019 (started)</div>
+    <div class="info"><strong>Premiered:</strong> spring 2019</div>
+    <div class="info"><strong>Duration:</strong> 23m</div>
+    <div class="info"><strong>Status:</strong> Finished Airing</div>
+    <div class="info"><strong>MAL Score:</strong> 8.57</div>
+    <div class="info"><strong>Genres:</strong>
+      <div class="genres">
+        <div class="genre-tag">Action</div>
+        <div class="genre-tag">Demons</div>
+        <div class="genre-tag">Historical</div><br>
+        <div class="genre-tag">Shounen</div>
+        <div class="genre-tag">Supernatural</div>
+      </div>
+    </div>
+    <div class="info"><strong>Studios:</strong> Ufotable</div>
+    <div class="info"><strong>Producers:</strong>Aniplex shueisha,Ufotable</div>
+  </div>
+ </div>
+ <br>
+ <div><h3>More Seasons</h3></div>
+</div>
+ <div class="container">
+    <div class="card"><img src="https://a.storyblok.com/f/178900/2896x4096/e7ecabafde/25c281a8ed06846d15249d6fa0eeb98c1630394205_main.jpg/m/filters:quality(95)format(webp)" alt="Season-1">Season-1</div>
+    <div class="card"><img src="https://i.pinimg.com/736x/e7/8e/e4/e78ee446e681555ba0efcabf35c53082.jpg" alt="Season-2">The Movie: Mugen Train</div>
+    <div class="card"><img src="https://m.media-amazon.com/images/M/MV5BNzEzYjhkYTctMWNmZS00MTc5LWI4OWUtZjFkNzNkYTNkMTJlXkEyXkFqcGc@._V1_.jpg" alt="Season-3">Mugen Train (TV Ver.)</div>
+    <div class="card"><img src="https://a.storyblok.com/f/178900/841x1200/f6c1ec92a6/f87b496f51060083418dbb4aa07eeaf11626171316_main.jpg/m/filters:quality(95)format(webp)" alt="Season-4 Part-2">Season-2: Entertainment District</div>
+    <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmXJ9ZHE5Mkv1F604zOVAL5tqPffHkjvgSfA&s" alt="Season-1">Season-3: Swordsmith Village Arc</div>
+    <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYKYAkuOMTaDKhMy0kmL91-6W-nSbAUkyrTw&s" alt="Season-1">Season-4: Hashira Training Arc</div>
+ </div>
+<!---------------------------------------------------------------------------->
+
+ <script src="https://cdn.lordicon.com/lordicon.js"></script>
+<script src="script.js"></script>
+</div>
+</body>
+</html>

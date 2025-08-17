@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naruto</title>
+    <link rel="stylesheet" href="cardscss.css">
+</head>
+<body>
+    <div class="body">
+  <div class="all">
+    <!-- Left Side: Logo & Search -->
+    <div class="left-icons">
+      <!---logo------>
+      <div class="logo">
+         <lord-icon
+          src="https://cdn.lordicon.com/tqbntcar.json"
+          trigger="hover"
+          colors="primary:#ffffff,secondary:#ffffff">
+        </lord-icon>
+      </div>
+      <!----search----->
+      <div class="search">
+        <a href="search.html">
+        <lord-icon 
+          src="https://cdn.lordicon.com/wjyqkiew.json"
+          trigger="loop"
+          state="loop-spin"
+          colors="primary:#ffffff,secondary:#ffffff">
+        </lord-icon></a>
+      </div>
+    </div>
+
+    <!-- Right Side: Menu & Profile -->
+    <div class="right-icons">
+      <!----menu------>
+    <div class="menu">
+  <lord-icon
+    src="https://cdn.lordicon.com/jectmwqf.json"
+    trigger="click"
+    onclick="toggleMenu()"
+    state="hover-squeeze"
+    colors="primary:#ffffff,secondary:#ffffff"
+    style="width:40px;height:40px;cursor:pointer;">
+  </lord-icon>
+</div>
+<section id="menuDropdown" class="dropdown-content" style="display: none;">
+  <a href="index.html">Home</a>
+  <a href="Watch_List.html">Watch List</a>
+  <a href="#">Most Popular</a>
+  <a href="#">Movies</a>
+  <a href="#">TV Series</a>
+  <a href="#">Genre</a>
+  <a href="about.html">About Us</a>
+</section>
+      <!--------- profile-------->
+      <div class="profile">
+  <div onclick="toggleDropdown()" class="profile-icon">
+    <lord-icon
+      src="https://cdn.lordicon.com/kdduutaw.json"
+      trigger="click"
+      state="hover-looking-around"
+      colors="primary:#ffffff,secondary:#ffffff">
+    </lord-icon>
+  </div>
+   <section id="profileDropdown" class="dropdown-content">
+    <a href="profile.html">My Profile</a>
+    <a href="#">Settings</a>
+    <a href="login.html">Logout</a>
+  </section>
+</div>
+</div>
+</div>
+<!------text&image------------->
+<div class="img">
+    <img class="img-img" src="https://m.media-amazon.com/images/M/MV5BZTNjOWI0ZTAtOGY1OS00ZGU0LWEyOWYtMjhkYjdlYmVjMDk2XkEyXkFqcGc@._V1_.jpg" alt="One Piece" />
+    <div class="img_info">
+      <h2>Naruto</h2>
+      <p>Genre: Action, Drama, Adventure</p>
+      <p>Rating: ⭐ 9.0/10</p>
+    </div>
+    <button class="watchlist-btn" onclick="ddToWatchlist()">+ Add to Watchlist</button>
+  </div>
+
+<!-----------------seasons----------------->
+<div class="seasons">
+  <div>
+   <div class="info"><strong>Japanese:</strong>NARUTO -ナルト-  </div>
+    <div class="info"><strong>Synonyms:</strong>Naruto</div>
+    <div class="info"><strong>Aired:</strong> 2002 to 2007(classic series)</div>
+    <div class="info"><strong>Premiered:</strong> Fall 2002</div>
+    <div class="info"><strong>Duration:</strong> 23m</div>
+    <div class="info"><strong>Status:</strong> Finished Airing</div>
+    <div class="info"><strong>MAL Score:</strong> 7.89</div>
+    <div class="info"><strong>Genres:</strong>
+      <div class="genres">
+        <div class="genre-tag">Action</div>
+        <div class="genre-tag">Adventure</div>
+        <div class="genre-tag">Martial Arts</div><br>
+        <div class="genre-tag">Shounen</div>
+        <div class="genre-tag">Super Power</div>
+        <div class="genre-tag">Comedy</div>
+      </div>
+    </div>
+    <div class="info"><strong>Studios:</strong> Studio Pierrot</div>
+    <div class="info"><strong>Producers:</strong>TV Tokyo, Aniplex shueisha, Studio Pierrot, Viz Media</div>
+  </div>
+ </div>
+ <br>
+ <div><h3>More Seasons</h3></div>
+</div>
+ <div class="container">
+    <div class="card"><img src="https://static0.cbrimages.com/wordpress/wp-content/uploads/sharedimages/2024/07/naruto-2002.jpg" alt="Season-1">Naruto classic</div>
+    <div class="card"><img src="https://m.media-amazon.com/images/M/MV5BNTk3MDA1ZjAtNTRhYS00YzNiLTgwOGEtYWRmYTQ3NjA0NTAwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Season-2">Naruto Shippuden</div>
+    <div class="card"><img src="https://m.media-amazon.com/images/M/MV5BYmZjYjY3ZGEtZDRlOC00MjkwLThkOTYtZjI1MjI4ZWYzMDY5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Season-3">Sipn-off:Rock Lee & His Ninja Pals</div>
+    <div class="card"><img src="https://m.media-amazon.com/images/M/MV5BMjk1NzA4Njg4Ml5BMl5BanBnXkFtZTgwMDgxODQ5MzE@._V1_FMjpg_UX1000_.jpg" alt="Season-4 Part-2">The Last: Naruto The Movie</div>
+ </div>
+<!---------------------------------------------------------------------------->
+
+ <script src="https://cdn.lordicon.com/lordicon.js"></script>
+<script src="script.js"></script>
+</div>
+</body>
+</html>
